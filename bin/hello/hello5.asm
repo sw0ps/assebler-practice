@@ -10,5 +10,5 @@ again:
 	PUTCHAR 10
 	inc 	eax
 	cmp 	eax, 5
-	jl 		again
+	jl  	again
 	FINISH
