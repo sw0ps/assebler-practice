@@ -6,9 +6,9 @@ _start:
 	mov 	eax, 0
 
 again:
-	PRINT 	"Hello"
+	PRINT	"Hello"
 	PUTCHAR 10
 	inc 	eax
-	cmp		eax, 5
-	jl		again
+	cmp 	eax, 5
+	jl 		again
 	FINISH
