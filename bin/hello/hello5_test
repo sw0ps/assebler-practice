@@ -1,0 +1,14 @@
+#!/bin/sh
+#				hello4_test.sh
+
+
+result="$(./hello5)"
+expected="$(cat expected_test_result)"
+if [ "$result" != "$expected" ] 
+then
+	echo FAILED
+	exit 2
+else
+	echo PASSED
+fi
+exit 0
