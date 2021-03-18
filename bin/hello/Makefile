@@ -1,11 +1,12 @@
 CC = nasm
+source = hello5
 
 test: 
-	sh hello5_test
+	sh ${source}_test
 
-build: hello5.asm
-	${CC} -f elf hello5.asm
-	ld -m elf_i386 hello5.o -o hello5
+build: ${source}.asm
+	${CC} -f elf ${source}.asm
+	ld -m elf_i386 ${source}.o -o ${source}
 
 run:
-	./hello5
+	./${source}
